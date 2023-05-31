@@ -1,16 +1,16 @@
 import React from "react";
-import { Button } from "../Shared";
+import { Button, Heading } from "../Shared";
 
 const Hero = () => {
   return (
-    <div className="lg:my-40 my-28 text-start lg:ml-32 m-5 w-fit">
-      <p className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-2xl lg:text-5xl font-bold text-transparent">
+    <div className="lg:mt-40 mt-28 text-start w-fit">
+      <p className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-3xl lg:text-5xl font-bold text-transparent">
         Hi, my name is
       </p>
       <h1 className="text-white text-4xl lg:text-7xl font-bold my-3">
         Mohammed Farhaan
       </h1>
-      <p className="text-white  text-xl lg:text-3xl font-light">
+      <p className="text-white text-xl lg:text-3xl font-light">
         Full Stack Developer
       </p>
       <div className="flex mt-8">
