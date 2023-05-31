@@ -25,9 +25,12 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="text-primary m-2 mr-10 flex justify-end">
+    <div className="text-blue-600 m-2 mr-10 flex justify-end">
       {links.map((link) => (
-        <a href="#" className="font-medium text-xl px-3">
+        <a
+          href="#"
+          className="font-medium text-xl px-3 hover:scale-125 transform transition-all duration-500 ease-in-out"
+        >
           {link.name}
         </a>
       ))}
