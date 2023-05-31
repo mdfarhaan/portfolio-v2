@@ -1,7 +1,5 @@
-const IndexPage = () => (
-  <>
-    <h1 className="text-center text-xl">Hello Next.js 👋</h1>
-  </>
-);
+import Landing from "../components/Landing";
 
-export default IndexPage;
+const LandingPage = () => <Landing />;
+
+export default LandingPage;
