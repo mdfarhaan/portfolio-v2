@@ -3,6 +3,7 @@ import Layout from "../Layout";
 import Hero from "./Hero";
 import About from "./About";
 import Experience from "./Experience";
+import Projects from "./Projects";
 
 const Landing = () => {
   return (
@@ -10,6 +11,7 @@ const Landing = () => {
       <Hero />
       <About />
       <Experience />
+      <Projects />
     </Layout>
   );
 };
