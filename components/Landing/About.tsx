@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, Heading } from "../Shared";
+import { Heading, Section } from "../Shared";
 
 const About = () => {
   return (
-    <div className="my-40">
+    <Section>
       <Heading title="About Me" />
       <p className="lg:text-2xl text-xl text-white w-[90%] my-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -24,7 +24,7 @@ const About = () => {
         Mauris porta leo et semper ornare. Vestibulum dignissim libero vel
         volutpat imperdiet. Donec ultricies et sem et tincidunt.
       </p>
-    </div>
+    </Section>
   );
 };
 
