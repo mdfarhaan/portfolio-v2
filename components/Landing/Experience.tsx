@@ -96,7 +96,7 @@ const Experience = () => {
 
       <div className="w-[90%] my-10">
         {experienceList.map((item, idx) => (
-          <Card idx={idx} data={item} />
+          <Card idx={idx} key={idx} data={item} />
         ))}
       </div>
     </Section>
