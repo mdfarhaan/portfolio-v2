@@ -38,11 +38,13 @@ const Card = ({ data }) => {
                   </Link>
                 )}
                 {data.live && (
-                  <HiOutlineExternalLink
-                    color="#fff"
-                    size={22}
-                    className="mx-2 cursor-pointer"
-                  />
+                  <Link href={data.live} target="_blank" rel="noopener">
+                    <HiOutlineExternalLink
+                      color="#fff"
+                      size={22}
+                      className="mx-2 cursor-pointer"
+                    />
+                  </Link>
                 )}
               </div>
             </div>

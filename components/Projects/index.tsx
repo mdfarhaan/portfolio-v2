@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Layout from "../Layout";
 import { Button } from "../Shared";
@@ -57,12 +57,12 @@ const Project = () => {
     <Layout>
       <div className="w-[90%] my-20 text-white text-center">
         <h1 className="text-5xl">Projects I've Built</h1>
-        <div className="flex justify-evenly mt-10 w-full">
+        {/* <div className="flex justify-evenly mt-10 w-full">
           <Button text="All" />
           <Button text="Frontend" varient={"secondary"} />
           <Button text="Backend" varient={"secondary"} />
           <Button text="Apps" varient={"secondary"} />
-        </div>
+        </div> */}
         <div className="m-5">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
