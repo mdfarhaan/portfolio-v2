@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="text-blue-600 m-2 mr-10 flex justify-end">
+    <div className="text-blue-600 m-2 mt-5 mr-10 flex justify-end">
       {links.map((link) => (
         <a
           key={link.name}

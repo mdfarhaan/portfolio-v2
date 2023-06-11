@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Section = ({ children }) => {
-  return <section className="my-40">{children}</section>;
+  return (
+    <section data-aos="fade-up" className="my-40">
+      {children}
+    </section>
+  );
 };
 
 export default Section;

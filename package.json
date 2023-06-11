@@ -9,6 +9,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "framer-motion": "^10.12.16",
     "next": "^13.3.0",
     "prop-types": "^15.8.1",
