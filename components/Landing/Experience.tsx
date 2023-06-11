@@ -1,7 +1,9 @@
 import { useRef, useState } from "react";
-import { Heading, Section } from "../Shared";
+import Link from "next/link";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { CgClose, CgMathPlus } from "react-icons/cg";
+import { Heading, Section } from "../Shared";
+import { experience } from "../helper/data";
 
 const Card = (props) => {
   const answerElRef = useRef();
@@ -25,14 +27,16 @@ const Card = (props) => {
       <div className="border-2 border-blue-500 rounded p-5 bg-secondary">
         <div className="flex justify-between items-center">
           <span className="flex items-center">
-            <h2 className="lg:text-3xl text-2xl font-bold">{data.name}</h2>
-            <a href={data.link} target="_blank">
-              <HiOutlineExternalLink
-                color="#fff"
-                size={20}
-                className="ml-2 cursor-pointer"
-              />
-            </a>
+            <h2 className="lg:text-3xl text-2xl font-semibold">{data.name}</h2>
+            {data.link && (
+              <Link href={data.link} target="_blank">
+                <HiOutlineExternalLink
+                  color="#fff"
+                  size={20}
+                  className="ml-2 cursor-pointer"
+                />
+              </Link>
+            )}
           </span>
           <p className="lg:text-lg text-md font-medium">{data.duration}</p>
         </div>
@@ -95,7 +99,7 @@ const Experience = () => {
       <Heading title="Experience" />
 
       <div className="w-[90%] my-10">
-        {experienceList.map((item, idx) => (
+        {experience.map((item, idx) => (
           <Card idx={idx} key={idx} data={item} />
         ))}
       </div>

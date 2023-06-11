@@ -1,9 +1,10 @@
 import React from "react";
-import { Heading, Section, Button } from "../Shared";
+import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { LuGithub } from "react-icons/lu";
-import Link from "next/link";
+import { Heading, Section, Button } from "../Shared";
+import { featuredProjects } from "../helper/data";
 
 const Card = ({ data, idx }) => {
   return (
@@ -29,7 +30,7 @@ const Card = ({ data, idx }) => {
           {data.description}
         </p>
         <div>
-          <div>
+          <div className="">
             {data.stack.map((item) => (
               <span key={item} className="text-lg font-light mx-2">
                 {item}
@@ -67,38 +68,15 @@ const Card = ({ data, idx }) => {
 };
 
 const Projects = () => {
-  const projectsArr = [
-    {
-      name: "Flow Cloud Share",
-      image: "https://picsum.photos/200/300?image=1050",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque sodales laoreet. vel luctus justo. Nulla aliquet blandit odio, posuere gravida",
-      github: "https://github.com",
-      live: null,
-      stack: ["React", "Mongo"],
-    },
-    {
-      name: "Flow Cloud Share",
-      image: "https://picsum.photos/200/300?image=1050",
-      description:
-        "A file sharing app built with React, Node, Express, and MongoDB",
-      github: "https://github.com",
-      live: null,
-      stack: ["React", "Mongo"],
-    },
-  ];
   return (
     <Section>
       <Heading title="Projects" />
       <div className="w-[90%]">
-        {projectsArr.map((project, idx) => (
+        {featuredProjects.map((project, idx) => (
           <Card data={project} key={project.name} idx={idx} />
         ))}
       </div>
-      <Link
-        className="m-5 grid place-content-center w-[90%]"
-        href="mailto:farhaanm110@gmail.com"
-      >
+      <Link className="m-5 grid place-content-center w-[90%]" href="/projects">
         <Button text="Show Me More" />
       </Link>
     </Section>

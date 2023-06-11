@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Card = ({ data }) => {
   return (
-    <div className="w-fit m-5">
+    <div className="w-full m-5">
       <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
         <div className="text-white text-start bg-secondary w-72 rounded-lg">
           {data.image && (
@@ -18,11 +18,11 @@ const Card = ({ data }) => {
           )}
           <div className="p-3">
             <h1 className="text-2xl font-bold">{data.name}</h1>
-            <p className="text-xl font-normal my-5">{data.description}</p>
+            <p className="text-lg font-normal my-5">{data.description}</p>
             <div className="flex items-center justify-between">
-              <div className="grid grid-cols-3">
+              <div className="grid grid-cols-3 gap-1">
                 {data.stack.map((item) => (
-                  <p className="text-md font-light mx-1" key={item}>
+                  <p className="text-md font-light" key={item}>
                     {item}
                   </p>
                 ))}
