@@ -1,39 +1,44 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const links = [
     {
       name: "About",
-      href: "#",
+      id: "about-me-section",
     },
     {
       name: "Skills",
-      href: "#",
+      id: "skills-section",
     },
     {
       name: "Experience",
-      href: "#",
+      id: "experience-section",
     },
     {
-      name: "Project",
-      href: "#",
+      name: "Projects",
+      id: "projects-section",
     },
     {
       name: "Contact",
-      href: "#",
+      id: "contact-section",
     },
   ];
 
   return (
     <div className="text-blue-600 m-2 mt-5 mr-10 flex justify-end">
       {links.map((link) => (
-        <a
-          key={link.name}
-          href="#"
-          className="font-medium text-xl px-3 hover:scale-125 transform transition-all duration-500 ease-in-out"
+        <Link
+          activeClass="active"
+          to={link.id}
+          spy={true}
+          smooth={true}
+          offset={-250}
+          duration={700}
+          className="font-medium text-xl cursor-pointer px-3 hover:scale-125 transform transition-all duration-500 ease-in-out"
         >
           {link.name}
-        </a>
+        </Link>
       ))}
     </div>
   );

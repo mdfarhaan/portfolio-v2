@@ -3,7 +3,7 @@ import { Heading, Section } from "../Shared";
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about-me-section">
       <Heading title="About Me" />
       <p className="lg:text-2xl text-xl text-white w-[90%] my-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus

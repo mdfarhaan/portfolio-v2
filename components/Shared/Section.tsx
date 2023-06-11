@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const Section = ({ children }) => {
+const Section = ({ children, id }) => {
   return (
-    <section data-aos="fade-up" className="my-40">
+    <section id={id} data-aos="fade-up" className="my-40">
       {children}
     </section>
   );

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <Section>
+    <Section id="contact-section">
       <Heading title="Get in Touch" />
       <div className="w-[90%]">
         <p className="lg:text-2xl text-xl text-white  my-10">

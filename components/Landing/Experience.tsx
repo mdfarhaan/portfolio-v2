@@ -95,7 +95,7 @@ const Experience = () => {
   ];
 
   return (
-    <Section>
+    <Section id="experience-section">
       <Heading title="Experience" />
 
       <div className="w-[90%] my-10">

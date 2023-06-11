@@ -69,7 +69,7 @@ const Card = ({ data, idx }) => {
 
 const Projects = () => {
   return (
-    <Section>
+    <Section id="projects-section">
       <Heading title="Projects" />
       <div className="w-[90%]">
         {featuredProjects.map((project, idx) => (

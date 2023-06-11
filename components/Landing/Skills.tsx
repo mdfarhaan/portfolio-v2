@@ -5,7 +5,7 @@ import { skills } from "../helper/data";
 
 const Skills = () => {
   return (
-    <Section>
+    <Section id="skills-section">
       <Heading title="Skills" />
       <div className="w-[90%]">
         {skills.map((item, idx) => (
