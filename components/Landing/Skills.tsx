@@ -23,7 +23,7 @@ const Skills = () => {
       <Heading title="Skills" />
       <div className="w-fit overflow-auto">
         {skillsList.map((item, idx) => (
-          <div key={item.section} className="my-20 text-white">
+          <div key={item.section} className="mt-20 text-white">
             <h3 className="self-start text-3xl mb-10 tracking-widest font-normal">
               {item.section}
             </h3>

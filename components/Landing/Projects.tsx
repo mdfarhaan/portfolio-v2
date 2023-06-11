@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Section } from "../Shared";
+import { Heading, Section, Button } from "../Shared";
 import Image from "next/image";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { LuGithub } from "react-icons/lu";
@@ -95,6 +95,12 @@ const Projects = () => {
           <Card data={project} key={project.name} idx={idx} />
         ))}
       </div>
+      <Link
+        className="m-5 grid place-content-center w-[90%]"
+        href="mailto:farhaanm110@gmail.com"
+      >
+        <Button text="Show Me More" />
+      </Link>
     </Section>
   );
 };

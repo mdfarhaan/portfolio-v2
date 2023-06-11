@@ -8,7 +8,7 @@ const About = () => {
       <p className="lg:text-2xl text-xl text-white w-[90%] my-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
         pellentesque sodales laoreet.
-        <span className="text-blue-600">Sed sit amet bibendum nibh,</span> vel
+        <span className="text-blue-500">Sed sit amet bibendum nibh,</span> vel
         luctus justo. Nulla aliquet blandit odio, posuere gravida arcu malesuada
         vitae. Curabitur scelerisque nibh arcu, luctus ullamcorper urna mollis
         eu.
@@ -18,7 +18,7 @@ const About = () => {
         Nullam lobortis eleifend est, sed pretium sapien semper sed. Fusce vel
         dictum massa, vel finibus diam. Aliquam id condimentum nibh. Etiam
         tempus ex ac rhoncus commodo.
-        <span className="text-blue-600">
+        <span className="text-blue-500">
           Ut ac purus et nisl pulvinar venenatis.
         </span>
         Mauris porta leo et semper ornare. Vestibulum dignissim libero vel
