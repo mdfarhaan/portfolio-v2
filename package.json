@@ -17,7 +17,9 @@
     "react-fast-marquee": "^1.6.0",
     "react-icons": "^4.9.0",
     "react-intersection-observer": "^9.4.4",
-    "react-responsive-masonry": "^2.1.7"
+    "react-parallax-tilt": "^1.7.145",
+    "react-responsive-masonry": "^2.1.7",
+    "react-tilt": "^1.0.2"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",

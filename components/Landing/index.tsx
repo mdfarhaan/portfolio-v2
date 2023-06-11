@@ -4,16 +4,18 @@ import Hero from "./Hero";
 import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
-import SKills from "./Skills";
+import Skills from "./Skills";
+import Contact from "./Contact";
 
 const Landing = () => {
   return (
     <Layout>
       <Hero />
       <About />
-      <SKills />
+      <Skills />
       <Experience />
       <Projects />
+      <Contact />
     </Layout>
   );
 };
