@@ -1,5 +1,7 @@
 import React from "react";
-import { Button, Heading } from "../Shared";
+import Link from "next/link";
+import { Button } from "../Shared";
+import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -14,16 +16,19 @@ const Hero = () => {
         Full Stack Developer
       </p>
       <div className="flex mt-8">
-        <Button
-          text={"Contact"}
-          onClick={() => console.log("Click")}
-          style={{ marginRight: 10 }}
-        />
-        <Button
-          text={"Resume"}
-          varient="secondary"
-          onClick={() => console.log("Click")}
-        />
+        <ScrollLink
+          activeClass="active"
+          to="contact-section"
+          spy={true}
+          smooth={true}
+          offset={-250}
+          duration={700}
+        >
+          <Button text={"Contact"} style={{ marginRight: 10 }} />
+        </ScrollLink>
+        <Link href="resume.pdf" target="_blank">
+          <Button text={"Resume"} varient="secondary" />
+        </Link>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { socials } from "../helper/data";
 
 const Sidebar = () => {
   return (
-    <aside className="sm:flex hidden justify-between flex-col items-center w-20 fixed left-0 top-0 h-screen">
+    <aside className="flex justify-between flex-col items-center w-20 fixed left-0 top-0 h-full">
       <h1 className="text-white">MDF</h1>
       <div className="grid place-content-center place-items-center">
         <Link href={socials.github} target="_blank" rel="noopener">

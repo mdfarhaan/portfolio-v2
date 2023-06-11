@@ -15,18 +15,18 @@ const Card = ({ data, idx }) => {
     >
       <Image
         src={"/screen.png"}
-        className="md:w-1/2 w-full h-96 object-contain"
+        className="md:w-[60%] w-full object-contain"
         width={100}
         height={100}
         alt="screen"
       />
       <div
-        className={`z-10 flex h-96 text-white flex-col items-center justify-center ${
+        className={`flex md:w-1/2 w-full mt-10 text-white flex-col items-center justify-center ${
           idx % 2 == 0 ? "md:items-end" : "md:items-start"
         }`}
       >
         <h1 className="text-3xl font-bold">{data.name}</h1>
-        <p className="bg-blue-500 my-5 text-xl w-[90%] p-5 rounded">
+        <p className="bg-blue-500 my-5 text-lg w-[90%] p-5 rounded">
           {data.description}
         </p>
         <div>
@@ -76,7 +76,10 @@ const Projects = () => {
           <Card data={project} key={project.name} idx={idx} />
         ))}
       </div>
-      <Link className="m-5 grid place-content-center w-[90%]" href="/projects">
+      <Link
+        className="mt-20 grid place-content-center w-[90%]"
+        href="/projects"
+      >
         <Button text="Show Me More" />
       </Link>
     </Section>
