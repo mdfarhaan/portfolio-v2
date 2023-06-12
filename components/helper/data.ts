@@ -34,6 +34,7 @@ export const skills = [
       "PostgresQL",
       "Prisma",
       "ApacheKafka",
+      "NGINX",
     ],
   },
   {
@@ -42,7 +43,7 @@ export const skills = [
   },
   {
     section: "Tools",
-    skills: ["Git", "Github", "VsCode", "Postman"],
+    skills: ["Git", "Github", "Jira", "Postman"],
   },
 ];
 
