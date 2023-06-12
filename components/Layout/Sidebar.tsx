@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <aside className="flex justify-between flex-col items-center w-20 fixed left-0 top-0 h-full">
       <Link href="/">
-        <h1 className="text-white">MDF</h1>
+        <h1 className="m-3 ml-5 text-3xl text-white">MDF</h1>
       </Link>
 
       <div className="grid place-content-center place-items-center">

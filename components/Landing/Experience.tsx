@@ -6,13 +6,13 @@ import { Heading, Section } from "../Shared";
 import { experience } from "../helper/data";
 
 const Card = (props) => {
-  const answerElRef = useRef();
+  const answerElRef: any = useRef();
   const [state, setState] = useState(false);
   const [answerH, setAnswerH] = useState("0px");
   const { data, idx } = props;
 
   const handleOpenAnswer = () => {
-    const answerElH = answerElRef.current.childNodes[0].offsetHeight;
+    const answerElH = answerElRef.current.childNodes[0]?.offsetHeight;
     setState(!state);
 
     setAnswerH(`${answerElH + 20}px`);

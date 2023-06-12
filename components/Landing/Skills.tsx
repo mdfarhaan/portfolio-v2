@@ -20,7 +20,7 @@ const Skills = () => {
               align="center"
             >
               {item.skills.map((skill) => (
-                <div className="grid place-items-center">
+                <div className="grid place-items-center" key={skill}>
                   <img
                     src={`/skills/${skill}.svg`}
                     alt={skill}

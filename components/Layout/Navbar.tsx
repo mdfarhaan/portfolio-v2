@@ -29,6 +29,7 @@ const Navbar = () => {
     <div className="text-blue-600 m-2 mt-5 mr-10 flex justify-end">
       {links.map((link) => (
         <Link
+          key={link}
           activeClass="active"
           to={link.id}
           spy={true}
