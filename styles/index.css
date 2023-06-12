@@ -4,6 +4,7 @@
 
 body {
   background-color: #000;
+  font-family: "Fira Code", monospace, sans-serif;
 }
 
 *::-webkit-scrollbar {

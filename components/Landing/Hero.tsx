@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
   return (
-    <div className="lg:mt-40 mt-28 text-start w-fit">
+    <div className="lg:mt-40 mt-28 text-start w-fit" id="hero-section">
       <p className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-3xl lg:text-5xl font-bold text-transparent">
         Hi, my name is
       </p>
