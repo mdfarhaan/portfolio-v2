@@ -56,7 +56,7 @@ const Card = (props) => {
         style={state ? { height: answerH } : { height: "0px" }}
       >
         <div className="bg-blue-500 rounded p-5 text-white">
-          <ul className="list-disc ml-5 mb-5 font-normal leading-5 text-lg">
+          <ul className="list-disc ml-5 mb-5 font-normal leading-5 text-xl">
             {data.description.map((item, index) => (
               <li key={index} className="my-2">
                 {item}

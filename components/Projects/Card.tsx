@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Card = ({ data }) => {
   return (
-    <div className="w-fit m-5">
+    <div className="w-fit mb-5 break-inside-avoid-column">
       <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
         <div className="text-white text-start bg-secondary w-72 rounded-lg">
           {data.image && (
@@ -20,9 +20,12 @@ const Card = ({ data }) => {
             <h1 className="text-2xl font-bold">{data.name}</h1>
             <p className="text-lg font-normal my-5">{data.description}</p>
             <div className="flex items-center justify-between">
-              <div className="grid grid-cols-3 gap-1">
+              <div className="flex items-center flex-wrap">
                 {data.stack.map((item) => (
-                  <p className="text-md font-light" key={item}>
+                  <p
+                    className="bg-blue-500 py-1 px-3 m-2 rounded text-md font-light"
+                    key={item}
+                  >
                     {item}
                   </p>
                 ))}
@@ -32,7 +35,7 @@ const Card = ({ data }) => {
                   <Link href={data.github} target="_blank" rel="noopener">
                     <LuGithub
                       color="#fff"
-                      size={22}
+                      size={28}
                       className="my-2 cursor-pointer"
                     />
                   </Link>
@@ -41,7 +44,7 @@ const Card = ({ data }) => {
                   <Link href={data.live} target="_blank" rel="noopener">
                     <HiOutlineExternalLink
                       color="#fff"
-                      size={22}
+                      size={28}
                       className="mx-2 cursor-pointer"
                     />
                   </Link>

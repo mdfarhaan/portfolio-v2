@@ -34,7 +34,10 @@ const Card = ({ data, idx }) => {
         <div>
           <div className="">
             {data.stack.map((item) => (
-              <span key={item} className="lg:text-lg text-xl font-light mx-2">
+              <span
+                key={item}
+                className="bg-secondary py-1 px-3 rounded lg:text-lg text-xl font-light mx-2"
+              >
                 {item}
               </span>
             ))}
@@ -49,7 +52,7 @@ const Card = ({ data, idx }) => {
                 <LuGithub
                   color="#fff"
                   size={28}
-                  className="my-2 cursor-pointer"
+                  className="my-2 mt-4 cursor-pointer"
                 />
               </Link>
             )}

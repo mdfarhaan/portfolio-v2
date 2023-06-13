@@ -15,8 +15,11 @@ const Contact = () => {
           malesuada vitae. Curabitur scelerisque nibh arcu, luctus ullamcorper
           urna mollis eu.
         </p>
-        <div className="w-full flex justify-center">
-          <Link className="mx-3" href="mailto:farhaanm110@gmail.com">
+        <div className="md:w-full w-[90%] flex md:flex-row flex-col items-center justify-center">
+          <Link
+            className="mx-3 md:mb-0 mb-10"
+            href="mailto:farhaanm110@gmail.com"
+          >
             <Button text="Send a Mail" />
           </Link>
           <Link className="mx-3" href="">
