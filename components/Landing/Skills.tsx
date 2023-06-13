@@ -26,7 +26,7 @@ const Skills = () => {
                   alt={skill}
                   className="w-20 md:mx-20 mx-10 h-20"
                 />
-                <span className="text-lg font-light text-center mt-2">
+                <span className="text-xl font-light text-center mt-2">
                   {skill}
                 </span>
               </div>

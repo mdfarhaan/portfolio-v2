@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Section id="about-me-section">
       <Heading title="About Me" />
-      <p className="lg:text-2xl text-xl text-white w-[90%] my-10">
+      <p className="text-2xl text-white w-[90%] mt-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
         pellentesque sodales laoreet.
         <span className="text-blue-500">Sed sit amet bibendum nibh,</span> vel

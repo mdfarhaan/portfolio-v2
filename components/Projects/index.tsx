@@ -15,17 +15,16 @@ const Project = () => {
           <Button text="Backend" varient={"secondary"} />
           <Button text="Apps" varient={"secondary"} />
         </div> */}
-        <div className="m-5">
-          <ResponsiveMasonry
-            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-          >
-            <Masonry columnsCount={3} gutter="0px">
-              {projects.map((project) => (
-                <Card data={project} key={project.name} />
-              ))}
-            </Masonry>
-          </ResponsiveMasonry>
-        </div>
+        <ResponsiveMasonry
+          className=""
+          columnsCountBreakPoints={{ 350: 1, 780: 2, 1150: 3 }}
+        >
+          <Masonry className="w-fit flex justify-center" gutter="20px">
+            {projects.map((project) => (
+              <Card data={project} key={project.name} />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
     </Layout>
   );

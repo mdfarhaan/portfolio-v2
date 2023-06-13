@@ -26,7 +26,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="text-blue-600 m-2 mt-5 mr-10 flex justify-end">
+    <div className="md:flex hidden text-blue-600 m-2 mt-5 mr-10 justify-end">
       {links.map((link) => (
         <Link
           key={link}

@@ -7,7 +7,7 @@ const Contact = () => {
     <Section id="contact-section">
       <Heading title="Get in Touch" />
       <div className="w-[90%]">
-        <p className="lg:text-2xl text-xl text-white  my-10">
+        <p className="text-2xl text-white  my-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           pellentesque sodales laoreet.
           <span className="text-blue-500">Sed sit amet bibendum nibh,</span> vel

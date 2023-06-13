@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Card = ({ data }) => {
   return (
-    <div className="w-full m-5">
+    <div className="w-fit m-5">
       <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
         <div className="text-white text-start bg-secondary w-72 rounded-lg">
           {data.image && (

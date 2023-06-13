@@ -57,7 +57,14 @@ export const experience = [
       "Developing front-end and mobile app solutions (B2C, B2B) in Travel Tech on React/Next.js framework and Flutter SDK.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque sodales laoreet. vel luctus justo. Nulla aliquet blandit odio, posuere gravida ",
     ],
-    skills: ["MERN", "Azure", "MicroServices", "MicroFrontend", "Kubernetes"],
+    skills: [
+      "MERN",
+      "Azure",
+      "MicroServices",
+      "MicroFrontend",
+      "Kubernetes",
+      "Serverless",
+    ],
   },
   {
     name: "Momento",

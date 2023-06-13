@@ -9,13 +9,13 @@ import { featuredProjects } from "../helper/data";
 const Card = ({ data, idx }) => {
   return (
     <div
-      className={`mt-5 flex flex-col ${
+      className={`mt-5 flex flex-col justify-center items-center ${
         idx % 2 == 0 ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
       <Image
         src={"/screen.png"}
-        className="md:w-[60%] w-full object-contain"
+        className="md:w-[60%] w-full mr-5 object-contain"
         width={100}
         height={100}
         alt="screen"
@@ -25,14 +25,16 @@ const Card = ({ data, idx }) => {
           idx % 2 == 0 ? "md:items-end" : "md:items-start"
         }`}
       >
-        <h1 className="text-3xl font-bold">{data.name}</h1>
-        <p className="bg-blue-500 my-5 text-lg w-[90%] p-5 rounded">
+        <h1 className="lg:text-3xl md:text-xl text-3xl font-bold">
+          {data.name}
+        </h1>
+        <p className="bg-blue-500 my-5 lg:text-lg md:text-sm w-full text-xl md:w-[90%] p-5 rounded">
           {data.description}
         </p>
         <div>
           <div className="">
             {data.stack.map((item) => (
-              <span key={item} className="text-lg font-light mx-2">
+              <span key={item} className="lg:text-lg text-xl font-light mx-2">
                 {item}
               </span>
             ))}
@@ -46,7 +48,7 @@ const Card = ({ data, idx }) => {
               <Link href={data.github} target="_blank" rel="noopener">
                 <LuGithub
                   color="#fff"
-                  size={22}
+                  size={28}
                   className="my-2 cursor-pointer"
                 />
               </Link>
