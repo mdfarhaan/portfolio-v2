@@ -114,7 +114,8 @@ export const experience = [
 export const projects = [
   {
     name: "Flow Cloud Share",
-    image: "https://picsum.photos/200/300?image=1050",
+    image:
+      "https://res.cloudinary.com/mdfarhaan/image/upload/v1686693907/Portfolio/Projects/screen_dd1o04.png",
     description:
       "Cloud sharing and storage service built using ReactJS, AWS S3 to store the uploaded files and TypeScript. Upload your file and get a link to share.",
     github: "https://github.com/mdfarhaan/flow",
@@ -123,7 +124,8 @@ export const projects = [
   },
   {
     name: "Crypto Portfolio Tracker",
-    image: null,
+    image:
+      "https://res.cloudinary.com/mdfarhaan/image/upload/v1686694058/Portfolio/Projects/cryptoflash_ephxwa.png",
     description:
       "Crypto Portfolio Tracker, keep track of your Profits, Losses, Valuation, Transaction and Assets all at one place. View your profits, losses, best performing crypto currency, Cryptoflash dashboard is packed with information about your assets. Charts to visualise your assets.",
     github: "https://github.com/mdfarhaan/cryptoflash",
@@ -132,7 +134,8 @@ export const projects = [
   },
   {
     name: "TRYM - URL Shortner",
-    image: null,
+    image:
+      "https://res.cloudinary.com/mdfarhaan/image/upload/v1686694104/Portfolio/Projects/trym_nvc5sr.png",
     description:
       "Shorten your url with your custom code at TRYM How cool is that!",
     github: "https://github.com/mdfarhaan/trym",
@@ -164,12 +167,22 @@ export const projects = [
     live: null,
     stack: ["Python", "Flask", "BeautifulSoup"],
   },
+  {
+    name: "Petrolon App",
+    image:
+      "https://res.cloudinary.com/mdfarhaan/image/upload/v1686694806/Portfolio/Projects/Mockup_rfukaw.png",
+    description: "Public API to get fuel price in India in JSON format.",
+    github: "https://github.com/mdfarhaan/fuel-price-api",
+    live: null,
+    stack: ["Python", "Flask", "BeautifulSoup"],
+  },
 ];
 
 export const featuredProjects = [
   {
     name: "Flow Cloud Share",
-    image: "https://picsum.photos/200/300?image=1050",
+    image:
+      "https://res.cloudinary.com/mdfarhaan/image/upload/v1686693907/Portfolio/Projects/screen_dd1o04.png",
     description:
       "Cloud sharing and storage service built using ReactJS, AWS S3 to store the uploaded files and TypeScript. Upload your file and get a link to share.",
     github: "https://github.com/mdfarhaan/flow",
@@ -178,7 +191,8 @@ export const featuredProjects = [
   },
   {
     name: "Crypto Portfolio Tracker",
-    image: null,
+    image:
+      "https://res.cloudinary.com/mdfarhaan/image/upload/v1686694058/Portfolio/Projects/cryptoflash_ephxwa.png",
     description:
       "Crypto Portfolio Tracker, keep track of your Profits, Losses, Valuation, Transaction and Assets all at one place. View your profits, losses, best performing crypto currency, Cryptoflash dashboard is packed with information about your assets. Charts to visualise your assets.",
     github: "https://github.com/mdfarhaan/cryptoflash",
@@ -187,7 +201,8 @@ export const featuredProjects = [
   },
   {
     name: "TRYM - URL Shortner",
-    image: null,
+    image:
+      "https://res.cloudinary.com/mdfarhaan/image/upload/v1686694104/Portfolio/Projects/trym_nvc5sr.png",
     description:
       "Shorten your url with your custom code at TRYM How cool is that!",
     github: "https://github.com/mdfarhaan/trym",

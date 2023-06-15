@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
       <main className="flex-1 xl:ml-52 lg:ml-32 sm:ml-36 ml-28">
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </main>
     </div>
   );

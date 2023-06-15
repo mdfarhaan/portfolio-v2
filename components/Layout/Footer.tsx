@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <p className="text-center text-white text-xl m-5 font-thin">
+      <p className="w-[90%] text-center text-white text-xl mb-5 font-thin">
         Made with ❤️ by MdFarhaan
       </p>
     </>

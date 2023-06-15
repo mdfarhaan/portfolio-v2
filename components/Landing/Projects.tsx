@@ -14,10 +14,10 @@ const Card = ({ data, idx }) => {
       }`}
     >
       <Image
-        src={"/screen.png"}
-        className="md:w-[60%] w-full mr-5 object-contain"
-        width={100}
-        height={100}
+        src={data.image}
+        className="md:w-[60%] w-full mr-5"
+        width={500}
+        height={500}
         alt="screen"
       />
       <div
