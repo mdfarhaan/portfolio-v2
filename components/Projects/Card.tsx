@@ -7,7 +7,7 @@ import Link from "next/link";
 const Card = ({ data }) => {
   return (
     <div className="w-fit mb-5 break-inside-avoid-column">
-      <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
+      <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
         <div className="text-white text-start bg-secondary w-72 rounded-lg">
           {data.image && (
             <img

@@ -123,6 +123,24 @@ export const projects = [
     stack: ["MERN", "Typescript", "AWS S3"],
   },
   {
+    name: "Kzilla.XYZ",
+    image: null,
+    description:
+      "Kzilla.XYZ is a URL shortner built with Svelte and MongoDB. I worked on adding custom code feature to the project.",
+    github: "https://github.com/srm-kzilla/kzilla.xyz",
+    live: "https://kzilla.xyz/",
+    stack: ["Svelte", "MongoDB"],
+  },
+  {
+    name: "Mass Mailer",
+    image: null,
+    description:
+      "Application to send mails to large batch of users. This project was used to send thousands of mails to students regrading events and webinars.",
+    github: null,
+    live: null,
+    stack: ["NextJS", "MongoDB", "Tailwind", "NodeJS", "ExpressJS"],
+  },
+  {
     name: "Crypto Portfolio Tracker",
     image:
       "https://res.cloudinary.com/mdfarhaan/image/upload/v1686694058/Portfolio/Projects/cryptoflash_ephxwa.png",
@@ -143,17 +161,24 @@ export const projects = [
     stack: ["MERN"],
   },
   {
-    name: "Mass Mailer",
-    image: "https://picsum.photos/200/300?image=1050",
-    description:
-      "Application to send mails to large batch of users. This project was used to send thousands of mails to students regrading events and webinars.",
-    github: null,
+    name: "Crypto Icons API",
+    image: null,
+    description: "API to get crypto currency icons",
+    github: "https://github.com/mdfarhaan/cryptoflash-icons-api",
     live: null,
-    stack: ["NextJS", "MongoDB", "Tailwind", "NodeJS", "ExpressJS"],
+    stack: ["NodeJS", "ExpressJS"],
+  },
+  {
+    name: "Notes App",
+    image: null,
+    description: "Simple note taking application built using ReactNative.",
+    github: "https://github.com/mdfarhaan/Notes-App",
+    live: null,
+    stack: ["ReactNative"],
   },
   {
     name: "Portfolio V1",
-    image: "https://picsum.photos/200/300?image=1050",
+    image: null,
     description: "Simple portfolio website built with ReactJS.",
     github: "https://github.com/mdfarhaan/portfolio",
     live: null,
@@ -175,6 +200,31 @@ export const projects = [
     github: "https://github.com/mdfarhaan/fuel-price-api",
     live: null,
     stack: ["Python", "Flask", "BeautifulSoup"],
+  },
+  {
+    name: "Fuel Price API",
+    image: null,
+    description: "API to scrap fuel prices in India.",
+    github: "https://github.com/mdfarhaan/fuel-price-api",
+    live: null,
+    stack: ["Python", "Flask", "BeautifulSoup"],
+  },
+  {
+    name: "D250 Landing Page",
+    image: null,
+    description: "Landing Page concept for my favourite bike.",
+    github: "https://github.com/mdfarhaan/Duke-250-Web-Design",
+    live: null,
+    stack: ["ReactJS"],
+  },
+  {
+    name: "Expense Tracker App",
+    image: null,
+    description:
+      "Expense Tracker app using Django for the backend and React Native for the frontend.",
+    github: "https://github.com/mdfarhaan/expense-tracker-app",
+    live: null,
+    stack: ["ReactNative", "Django"],
   },
 ];
 
